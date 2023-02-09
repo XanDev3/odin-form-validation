@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Project</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap">
+        <script src="https://kit.fontawesome.com/35d8074e8c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Basic Form</h1>
+        </header>
+        <main>
+        <div class="main-container">  
+            <div class="form-panel">
+                <form class="form">
+                  <label for="Email">
+                    Email
+                  </label>
+                  <input type="email" name="Email" id="Email" placeholder="@something.com" required>
+                  <label for="Country">
+                    Country
+                  </label>
+                  <input type="text" name="Country" id="Country" required>
+                  <label for="Zip Code">
+                    Zip Code
+                  </label>
+                  <input type="number" name="Zip Code" id="Zip Code" minlength="5" maxlength="9" placeholder="should be 5 digits or 9 max" required> 
+                    <!-- <div class="zipcode-div">should be 5 digits or 9 max</div>   -->
+                  </input>
+                  <label for="Password">
+                    Password
+                  </label>
+                  <input type="password" name="Password" id="Password" minlength="5"maxlength="9" required>
+                  <label for="Password-Confirmation">
+                    Confrim Password
+                  </label>
+                  <input type="password" name="Password-Confirmation" id="Password-Confirmation" minlength="5"maxlength="9" required>
+                  
+                  <button type="submit" class="submit-button"> Submit</button>
+                </form>
+        </div>
+        </main>
+        <footer class="footer">
+            <p>Xander© 2022</p><a href="https://github.com/xandernesta/odin-restaurant/"><i class="fa-github fa-brands" alt="github icon"></i></a>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>
