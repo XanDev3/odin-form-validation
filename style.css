@@ -6,6 +6,8 @@
     --dark-gray:rgb(94, 94, 94);
     --light-gray: #e5e5e5;
     --grey: #E6E6E6;
+    --dark-green: rgb(10, 121, 10);
+    --light-green: rgb(57, 207, 57);
     --red: rgb(138, 8, 8);
     --blue: rgb(9, 61, 107);
     --aqua: #00B3BB;
@@ -29,7 +31,7 @@ header {
     display: inline-block;
     width: 100%;
     padding: 1rem;
-    background: linear-gradient(90deg, var(--blue) 0%, var(--aqua) 100%);
+    background: linear-gradient(90deg, var(--light-green) 0%, var(--dark-green) 100%);
     border-color: 1px solid var(--black);
 }
 i, h1 {
@@ -50,6 +52,7 @@ input:invalid{
     display: flex;
     justify-content: center;
     justify-items: center;
+    margin-top: 10vh;
 }
 /* Form */
 .form-panel{
@@ -57,22 +60,39 @@ input:invalid{
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 300px;
+    width: 320px;
     padding: 20px 20px;
-    background-color: var(--light-gray);
+    border-radius: .33rem;
+    background-color: var(--light-aqua);
     transition: transform 250ms;
 }
 form {
     position: relative;
     top: 1vh;
-    height: 30vh;
-    width: 20vh;
+    height: 36vh;
+    width: 240px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 input{
-    height: 28px;
+    height: 32px;
+    border-radius: .25rem;
+    margin-bottom: 8px;
+}
+.submit-button{
+    width: 120px;
+    color:white;
+    background-color: var(--black);
+    border-radius: 8px;
+    margin: 8px 16px 8px 16px;
+    padding: 8px;
+    border: 2px solid var(--black);
+    align-self: center;
+}
+.submit-button:hover{
+    background-color: rgb(7, 7, 7, .7);
+    cursor: pointer;
 }
 
 /* Footer */
@@ -87,8 +107,8 @@ input{
     align-items: center;
     justify-content: center;
     margin-top: auto;
-    padding: .5rem 0 1rem 0;
-    background: linear-gradient(90deg, var(--aqua) 0%, var(--blue) 100%);
+    padding: .5rem 0 .5rem 0;
+    background: linear-gradient(90deg, var(--dark-green) 0%, var(--light-green) 100%);
   }
   .footer p{
     margin-bottom: 0;
